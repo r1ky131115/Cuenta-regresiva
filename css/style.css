@@ -1,0 +1,225 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #060a1f;
+	color: #f1f1f1;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* ? ----- PORTADA ----- */
+.portada {
+	width: 100%;
+	background: #060a1f;
+	min-height: 100vh;
+	/* position: fixed; */
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .4s ease-out all;
+}
+
+.portada.oculta {
+	transform: translateY(100%);
+	position: absolute;
+}
+
+.portada .header {
+    color: #fff;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.portada .header .logo {
+	font-size: 50px;
+	font-size: 900;
+	margin-bottom: 20px;
+}
+
+.portada .header .mensaje {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+
+
+/* ? ----- MAIN ----- */
+
+main {
+	display: flex;
+	justify-content: center;
+    color: #fff;
+	max-width: 1000px;
+	margin: auto;
+	width: 90%;
+	padding: 60px 0;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+
+
+.container {
+	position: relative;
+	width: 500px;
+	min-height: 500px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* ? ----- Calendario ----- */
+
+#dycalendar {
+	width: 100%;
+	padding: 20px;
+}
+
+#dycalendar table {
+	width: 100%;
+	margin-top: 40px;
+	border-spacing: 5px;
+}
+
+#dycalendar table tr:nth-child(1) td {
+	background: #ff006a;
+	color: #fff;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+#dycalendar table td {
+	padding: 10px;
+	cursor: pointer;
+}
+
+#dycalendar table td:hover {
+	background: #2196f3;
+	color: #fff !important;
+}
+
+.dycalendar-month-container .dycalendar-today-date, .dycalendar-month-container .dycalendar-target-date{
+	background: #127fd6;
+	color: #fff !important;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn {
+	background: #ff006a;
+	color: #fff;
+	font-size: 22px;
+	width: 44px;
+	height: 30px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+	font-weight: 400;
+	font-size: 28px;
+}
+
+/* ? ----- Cuenta Regresiva ----- */
+
+#contador {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+    /* background: #141829;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 5px; */
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.simply-section div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+
+.simply-section div span {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 140px;
+    background: #2196f3;
+    color: #fff;
+	font-size: 60px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simply-section div span:nth-child(2) {
+    height: 50px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+}
+
+.simply-section:last-child div span {
+    background: #ff006a;
+}
+
+.simply-section:last-child div span:nth-child(2) {
+    background: #ec0062;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+}
+
+
+/* ? ---------------------------- */
+
+
+
+/* ? ----- REDES SOCIALES ----- */
+.redes-sociales .btn-red-social {
+	padding: 15px 0;
+	display: inline-block;
+	min-width: 120px;
+	border-radius: 5px;
+	background: #141829;
+	color: #fff;
+	font-size: 30px;
+	margin: 0 20px;
+    margin-top: 120px;
+	transition: .3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, .15);
+}
+
